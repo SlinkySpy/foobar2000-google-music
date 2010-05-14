@@ -1,0 +1,678 @@
+2009-11-06 09:21:15
+2009-11-06 09:37:30
+2009-11-06 14:55:20
+2009-11-06 15:19:27
+2009-11-06 18:08:06
+2009-11-06 18:23:30
+2009-11-06 18:51:27
+2009-11-06 18:51:55
+2009-11-06 18:51:58
+2009-11-06 18:51:59
+2009-11-06 18:52:02
+2009-11-06 18:52:05
+2009-11-06 18:52:08
+2009-11-06 18:53:17
+2009-11-06 18:55:24
+2009-11-06 18:57:35
+2009-11-06 19:03:20
+2009-11-06 19:05:56
+2009-11-06 19:10:48
+2009-11-06 20:00:25
+2009-11-06 20:07:55
+2009-11-07 09:41:11
+2009-11-07 15:55:20
+2009-11-08 08:50:40
+2009-11-09 09:24:35
+2009-11-09 14:16:55
+2009-11-09 15:20:51
+2009-11-09 19:18:32
+2009-11-10 08:15:55
+2009-11-10 14:20:58
+2009-11-11 08:39:24
+2009-11-11 10:27:38
+2009-11-11 11:45:13
+2009-11-11 11:56:43
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 82, in <module>
+    time.sleep(1200)
+IOError: [Errno 4] Interrupted function call
+2009-11-12 09:54:03
+2009-11-12 09:58:12
+2009-11-12 11:15:11
+2009-11-12 17:46:35
+2009-11-12 21:31:28
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 82, in <module>
+    time.sleep(1200)
+IOError: [Errno 4] Interrupted function call
+2009-11-13 09:10:55
+2009-11-13 09:28:02
+2009-11-13 09:28:22
+2009-11-13 09:31:20
+2009-11-13 09:40:17
+2009-11-13 09:40:19
+2009-11-13 09:43:13
+2009-11-13 09:43:19
+2009-11-13 09:47:42
+2009-11-13 09:53:02
+2009-11-13 09:53:12
+2009-11-13 09:53:59
+2009-11-13 09:54:33
+2009-11-13 09:54:58
+2009-11-13 09:55:59
+2009-11-13 09:58:28
+2009-11-13 10:01:27
+2009-11-13 10:02:22
+2009-11-13 10:02:50
+2009-11-13 10:03:03
+2009-11-13 10:03:42
+2009-11-13 10:03:59
+2009-11-13 10:04:33
+2009-11-13 10:23:35
+2009-11-13 10:51:36
+2009-11-13 11:14:05
+2009-11-13 11:47:59
+2009-11-13 16:43:38
+2009-11-13 16:43:49
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 82, in <module>
+    time.sleep(1200)
+IOError: [Errno 4] Interrupted function call
+2009-11-14 18:40:04
+2009-11-15 13:59:01
+2009-11-15 13:59:14
+2009-11-15 14:12:26
+2009-11-15 14:12:55
+2009-11-15 14:13:28
+2009-11-15 14:14:29
+2009-11-15 14:17:40
+2009-11-15 14:21:01
+2009-11-15 14:21:16
+2009-11-16 08:34:35
+2009-11-16 20:09:03
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 82, in <module>
+    time.sleep(1200)
+IOError: [Errno 4] Interrupted function call
+2009-11-17 08:39:14
+2009-11-17 13:11:38
+2009-11-17 15:07:27
+2009-11-17 15:08:19
+2009-11-17 15:17:08
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 18, in <module>
+    pid.write(os.getpid())
+TypeError: argument 1 must be string or read-only character buffer, not int
+2009-11-17 15:18:19
+2009-11-17 15:19:15
+2009-11-17 15:22:05
+2009-11-17 15:22:13
+2009-11-17 15:22:27
+2009-11-17 16:50:28
+2009-11-18 09:50:54
+2009-11-18 09:59:32
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 87, in <module>
+    time.sleep(1200)
+IOError: [Errno 4] Interrupted function call
+2009-11-18 20:07:20
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 87, in <module>
+    time.sleep(1200)
+IOError: [Errno 4] Interrupted function call
+2009-11-19 09:09:01
+2009-11-19 10:09:42
+2009-11-19 10:22:55
+2009-11-19 14:33:08
+2009-11-19 14:36:57
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 87, in <module>
+    time.sleep(1200)
+IOError: [Errno 4] Interrupted function call
+2009-11-19 18:31:29
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 87, in <module>
+    time.sleep(1200)
+IOError: [Errno 4] Interrupted function call
+2009-11-20 08:37:44
+2009-11-22 14:17:20
+2009-11-23 09:10:28
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 87, in <module>
+    time.sleep(1200)
+IOError: [Errno 4] Interrupted function call
+2009-11-24 08:43:23
+2009-11-24 11:50:28
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 24, in <module>
+    xmldom = minidom.parse(playlist_url)
+  File "C:\Python\lib\xml\dom\minidom.py", line 1918, in parse
+    return expatbuilder.parse(file)
+  File "C:\Python\lib\xml\dom\expatbuilder.py", line 928, in parse
+    result = builder.parseFile(file)
+  File "C:\Python\lib\xml\dom\expatbuilder.py", line 211, in parseFile
+    parser.Parse("", True)
+xml.parsers.expat.ExpatError: no element found: line 1, column 0
+2009-11-24 11:50:37
+2009-11-24 16:40:53
+2009-11-24 16:41:38
+2009-11-24 19:26:32
+2009-11-24 19:26:47
+2009-11-24 19:26:55
+2009-11-24 19:27:15
+2009-11-24 19:27:30
+2009-11-24 19:27:32
+2009-11-25 09:10:55
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 87, in <module>
+    time.sleep(1200)
+IOError: [Errno 4] Interrupted function call
+2009-11-26 10:01:42
+2009-11-26 18:32:04
+2009-11-26 19:08:23
+2009-11-26 19:13:07
+2009-11-27 11:21:22
+2009-11-27 11:21:26
+2009-11-27 16:04:53
+2009-11-27 16:05:35
+2009-11-27 16:33:24
+2009-11-27 16:34:31
+2009-11-27 16:52:35
+2009-11-27 17:04:34
+2009-11-27 17:05:20
+2009-11-27 17:12:35
+2009-11-27 17:13:27
+2009-11-27 17:14:49
+2009-11-27 17:21:23
+2009-11-27 17:24:20
+2009-11-27 17:27:15
+2009-11-27 17:27:33
+2009-11-27 17:28:51
+2009-11-27 17:38:26
+2009-11-27 17:48:53
+2009-11-27 17:49:33
+2009-11-27 17:50:45
+2009-11-27 18:06:35
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 100, in <module>
+    updateplaylist()
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 76, in updateplaylist
+    download_url = psp(id)
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 50, in psp
+    if download_url:
+UnboundLocalError: local variable 'download_url' referenced before assignment
+2009-11-27 18:08:25
+2009-11-27 18:13:22
+2009-11-27 18:20:57
+2009-11-27 18:38:24
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 101, in <module>
+    updateplaylist()
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 88, in updateplaylist
+    log_data = song.childNodes[1].firstChild.data+": "+song_url+"\n"
+NameError: global name 'song_url' is not defined
+2009-11-27 18:38:31
+2009-11-27 18:57:54
+2009-11-27 19:10:09
+2009-11-27 19:10:32
+2009-11-27 19:13:50
+2009-11-27 19:21:24
+2009-11-27 19:38:06
+2009-11-27 19:51:41
+2009-11-27 20:04:20
+2009-11-27 20:57:17
+2009-11-28 11:57:50
+2009-11-28 15:07:53
+2009-11-28 18:30:21
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 24, in <module>
+    xmldom = minidom.parse(playlist_url)
+  File "C:\Python\lib\xml\dom\minidom.py", line 1918, in parse
+    return expatbuilder.parse(file)
+  File "C:\Python\lib\xml\dom\expatbuilder.py", line 928, in parse
+    result = builder.parseFile(file)
+  File "C:\Python\lib\xml\dom\expatbuilder.py", line 207, in parseFile
+    parser.Parse(buffer, 0)
+xml.parsers.expat.ExpatError: not well-formed (invalid token): line 7, column 235
+2009-11-28 18:33:17
+2009-11-28 18:38:17
+2009-11-28 18:39:07
+2009-11-28 18:42:34
+2009-11-28 19:36:44
+2009-11-29 11:54:52
+2009-11-29 12:17:42
+2009-11-29 12:26:07
+2009-11-29 12:56:18
+2009-11-29 13:07:21
+2009-11-29 13:46:32
+2009-11-29 14:01:17
+2009-11-29 14:21:12
+2009-11-29 15:00:32
+2009-11-29 15:12:33
+2009-11-29 15:13:03
+2009-11-29 15:29:30
+2009-11-29 18:42:53
+2009-11-29 19:09:29
+2009-11-30 09:01:08
+2009-11-30 09:30:27
+2009-11-30 09:39:06
+2009-11-30 13:26:42
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 100, in <module>
+    updateplaylist()
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 78, in updateplaylist
+    download_url = google_stream(id)
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 46, in google_stream
+    xml_url = "http://www.google.cn/music/songstreaming?id="+id+"&sig"+sig+"&output=xml"
+TypeError: coercing to Unicode: need string or buffer, _hashlib.HASH found
+2009-11-30 13:28:50
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 100, in <module>
+    updateplaylist()
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 78, in updateplaylist
+    download_url = google_stream(id)
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 46, in google_stream
+    xml_url = "http://www.google.cn/music/songstreaming?id="+id+"&sig"+sig+"&output=xml"
+TypeError: coercing to Unicode: need string or buffer, _hashlib.HASH found
+2009-11-30 13:31:20
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 100, in <module>
+    updateplaylist()
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 78, in updateplaylist
+    download_url = google_stream(id)
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 46, in google_stream
+    xml_url = "http://www.google.cn/music/songstreaming?id="+id+"&sig"+sig+"&output=xml"
+TypeError: coercing to Unicode: need string or buffer, _hashlib.HASH found
+2009-11-30 13:34:24
+2009-11-30 13:35:30
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 101, in <module>
+    updateplaylist()
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 79, in updateplaylist
+    download_url = google_stream(id)
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 54, in google_stream
+    download_url = xmldom_stream.getElementByTagName('songUrl')[0].firstChild.data
+AttributeError: Document instance has no attribute 'getElementByTagName'
+2009-11-30 13:36:16
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 101, in <module>
+    updateplaylist()
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 79, in updateplaylist
+    download_url = google_stream(id)
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 54, in google_stream
+    download_url = xmldom_stream.getElementsByTagName('songUrl')[0].firstChild.data
+IndexError: list index out of range
+2009-11-30 13:42:25
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 101, in <module>
+    updateplaylist()
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 79, in updateplaylist
+    download_url = google_stream(id)
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 45, in google_stream
+    sig = hashlib.md5(default_key+id)
+NameError: global name 'default_key' is not defined
+2009-11-30 13:43:37
+2009-11-30 13:45:51
+2009-11-30 13:46:27
+2009-11-30 13:46:48
+2009-11-30 13:47:31
+2009-11-30 14:20:12
+2009-11-30 15:15:33
+2009-11-30 16:18:00
+2009-11-30 17:34:02
+2009-11-30 18:41:04
+2009-11-30 18:46:59
+2009-11-30 19:10:25
+2009-12-01 08:57:42
+2009-12-01 18:45:51
+2009-12-01 18:54:10
+2009-12-02 19:00:04
+2009-12-02 19:03:10
+2009-12-02 19:04:27
+2009-12-02 19:04:44
+2009-12-03 09:52:13
+2009-12-03 11:23:11
+2009-12-03 11:42:18
+2009-12-03 19:13:57
+2009-12-04 09:33:23
+2009-12-04 17:01:29
+2009-12-04 18:35:02
+2009-12-05 17:05:02
+2009-12-05 17:09:03
+2009-12-06 10:18:44
+2009-12-07 09:12:29
+2009-12-07 09:39:01
+2009-12-07 16:45:56
+2009-12-08 09:01:20
+2009-12-08 09:07:01
+2009-12-08 09:10:52
+2009-12-08 10:14:52
+2009-12-08 12:01:16
+2009-12-08 13:06:49
+2009-12-08 13:07:19
+2009-12-08 13:12:19
+2009-12-08 13:19:42
+2009-12-09 10:26:19
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 115, in <module>
+    updateplaylist()
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 78, in updateplaylist
+    download_url = google_download(id)
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 37, in google_download
+    match_url = re.search("(?<=url\?q=).*?(?=&amp;ct)",song_pagedata)
+UnboundLocalError: local variable 'song_pagedata' referenced before assignment
+2009-12-09 20:09:38
+2009-12-10 09:23:11
+2009-12-10 12:44:19
+2009-12-10 12:48:43
+2009-12-10 13:39:43
+2009-12-10 18:55:28
+2009-12-11 09:16:29
+2009-12-12 11:15:15
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 114, in <module>
+    time.sleep(1800)
+IOError: [Errno 4] Interrupted function call
+2009-12-14 13:04:32
+2009-12-14 15:20:09
+2009-12-14 15:23:25
+2009-12-14 15:24:12
+2009-12-14 16:09:40
+2009-12-15 09:06:45
+2009-12-15 09:17:39
+2009-12-15 09:53:52
+2009-12-16 19:18:01
+2009-12-16 19:24:47
+2009-12-17 09:09:16
+2009-12-17 16:09:08
+2009-12-17 16:28:57
+2009-12-18 18:27:24
+2009-12-19 11:38:12
+2009-12-19 15:53:24
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 115, in <module>
+    time.sleep(1800)
+IOError: [Errno 4] Interrupted function call
+2009-12-21 20:26:37
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 115, in <module>
+    time.sleep(1800)
+IOError: [Errno 4] Interrupted function call
+2009-12-22 09:14:32
+2009-12-22 10:30:52
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 115, in <module>
+    time.sleep(1800)
+IOError: [Errno 4] Interrupted function call
+2009-12-22 16:46:17
+2009-12-24 10:41:06
+2009-12-26 12:34:43
+2009-12-26 19:55:37
+2009-12-28 11:06:09
+2009-12-29 10:14:16
+2009-12-29 10:14:30
+2009-12-29 10:26:34
+2010-01-01 14:50:49
+2010-01-01 14:51:31
+2010-01-14 12:13:14
+2010-01-14 12:14:27
+2010-01-14 12:17:03
+2010-01-14 15:20:43
+2010-01-14 16:04:56
+2010-01-18 19:33:44
+2010-01-21 09:33:23
+2010-01-21 10:56:47
+2010-01-27 16:30:58
+2010-01-27 16:31:36
+2010-01-27 16:43:09
+2010-01-27 16:43:30
+2010-02-23 13:08:22
+2010-02-24 13:19:57
+2010-02-24 13:26:35
+2010-02-24 13:27:22
+2010-03-01 16:43:14
+2010-03-01 16:55:54
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-02 10:23:31
+2010-03-02 10:23:58
+2010-03-02 10:26:26
+2010-03-02 10:26:54
+2010-03-02 10:28:07
+2010-03-02 11:31:03
+2010-03-02 11:31:28
+2010-03-02 11:31:59
+2010-03-02 11:36:42
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 114, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-02 15:29:59
+2010-03-02 15:30:35
+2010-03-02 17:21:10
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 114, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-03 09:07:13
+2010-03-03 09:08:00
+2010-03-03 18:37:53
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 114, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-04 10:40:20
+2010-03-04 10:45:05
+2010-03-04 10:45:44
+2010-03-04 10:46:05
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-05 09:26:18
+2010-03-05 10:10:18
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-07 12:06:59
+2010-03-07 13:04:10
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-09 13:56:56
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-10 08:55:12
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-10 18:36:42
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-11 19:03:43
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-12 09:10:57
+2010-03-12 13:46:22
+2010-03-12 17:59:15
+2010-03-12 17:59:30
+2010-03-12 17:59:57
+2010-03-12 18:01:29
+2010-03-12 18:01:47
+2010-03-12 18:02:25
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-13 12:35:20
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-16 10:56:44
+2010-03-16 11:33:17
+2010-03-16 13:33:55
+2010-03-16 13:38:31
+2010-03-16 13:52:09
+2010-03-16 16:34:06
+2010-03-16 16:37:10
+2010-03-16 16:38:17
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-17 15:39:28
+2010-03-17 15:45:40
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-22 14:41:02
+2010-03-22 14:41:58
+2010-03-22 14:44:11
+2010-03-22 20:00:32
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-03-26 16:15:38
+2010-03-26 16:16:43
+2010-03-26 16:22:37
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-04-01 13:22:57
+2010-04-01 13:33:25
+2010-04-01 14:12:23
+2010-04-01 14:28:04
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-04-09 14:12:24
+2010-04-23 11:46:41
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-04-26 11:30:25
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-04-27 11:06:28
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-04-28 09:24:04
+2010-04-28 09:28:07
+2010-04-28 09:30:23
+2010-04-28 09:31:49
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 100, in <module>
+    updateplaylist()
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 70, in updateplaylist
+    percent = open("percent.txt","w")
+IOError: [Errno 22] invalid mode ('w') or filename: 'percent.txt'
+2010-04-28 09:33:02
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-04-28 13:25:03
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-04-28 14:45:37
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-04-29 18:13:51
+2010-04-29 18:14:28
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-04-30 10:04:40
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-05-01 17:08:55
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-05-03 14:08:33
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-05-05 18:00:27
+2010-05-05 18:05:24
+2010-05-05 18:06:43
+2010-05-05 18:08:24
+2010-05-05 18:08:57
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-05-06 17:45:26
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-05-07 10:09:51
+2010-05-07 14:00:48
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 100, in <module>
+    updateplaylist()
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 70, in updateplaylist
+    percent = open("percent.txt","w")
+IOError: [Errno 22] invalid mode ('w') or filename: 'percent.txt'
+2010-05-07 14:05:00
+2010-05-07 14:23:45
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-05-08 12:04:10
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 100, in <module>
+    updateplaylist()
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 70, in updateplaylist
+    percent = open("percent.txt","w")
+IOError: [Errno 22] invalid mode ('w') or filename: 'percent.txt'
+2010-05-08 12:05:04
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 113, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-05-12 13:52:59
+2010-05-12 14:08:40
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 100, in <module>
+    updateplaylist()
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 70, in updateplaylist
+    percent = open("percent.txt","w")
+IOError: [Errno 22] invalid mode ('w') or filename: 'percent.txt'
+2010-05-12 14:27:16
+2010-05-12 14:28:29
+2010-05-12 14:30:28
+2010-05-12 14:30:59
+2010-05-12 14:34:50
