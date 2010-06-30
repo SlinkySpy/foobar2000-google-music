@@ -2,7 +2,7 @@
 $dom = new DOMDocument();
 $dom->load("default.pli");
 $songs = $dom->getElementsByTagName("song");
-echo "<from id='songlistform'><table width='100%' cellspacing='0' style='padding:4px 10px 0px 0px;'>";
+echo "<form id='songlistform'><table width='100%' cellspacing='0' style='padding:4px 10px 0px 0px;'>";
 if ($songs->length != 1){
 	$border ="border-bottom:1px solid #aaa;";
 }
