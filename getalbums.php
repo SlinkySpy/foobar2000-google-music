@@ -34,7 +34,7 @@ preg_match_all("/left\"><a href=\"\/music\/url\?q=%2Fmusic%2Falbum%3Fid%3D(\w+).
 
 echo "<span style='font-weight:bold;background-color:#999;color:#555;padding:0px 10px 0px 10px;margin-left:2px;'>{$artistname[0]}的专辑列表</span><table>";
 
-echo "<tr><td bgcolor='#cccccc'><a href='ownlist/temp.pli' style='display:block'  onclick='a_onclick(this);return false;'>热门歌曲_{$artistname[0]}</a></td><td><span style='font-size:12px;background-color:#666;color:#bbb;float:right;display:block;padding:2px;cursor:pointer;width:24px;' onclick='globalevent=event;loadsonglist(\"playlist=temp.pli\",\"热门歌曲_{$artistname[0]}\");'>详情</span></td></tr>";
+echo "<tr><td bgcolor='#cccccc'><a href='ownlist/temp.pli' style='display:block'  onclick='a_onclick(this);return false;'>热门歌曲_{$artistname[0]}</a></td><td><span style='font-size:12px;background-color:#666;color:#bbb;float:right;display:block;padding:2px;cursor:pointer;width:24px;' onclick='loadsonglist(\"playlist=temp.pli\",\"热门歌曲_{$artistname[0]}\",{\"pageY\":event.pageY?event.pageY:event.y,\"clientX\":event.clientX});'>详情</span></td></tr>";
 
 $i = 0;
 foreach ($results as $result){
@@ -42,7 +42,7 @@ foreach ($results as $result){
 	$id = $result[1];
 	$name = $result[2];
 	$name_special = htmlspecialchars($name);
-	echo "<tr><td bgcolor='$color'><a href='http://www.google.cn/music/album?id=$id&output=xml' style='display:block'  onclick='a_onclick(this);return false;'>$name</a></td><td><span style='font-size:12px;background-color:#666;color:#bbb;float:right;display:block;padding:2px;cursor:pointer;width:24px;' onclick='globalevent=event;loadsonglist(\"playlist=$id&cat=ablum\",\"$name_special\");'>详情</span></td></tr>";
+	echo "<tr><td bgcolor='$color'><a href='http://www.google.cn/music/album?id=$id&output=xml' style='display:block'  onclick='a_onclick(this);return false;'>$name</a></td><td><span style='font-size:12px;background-color:#666;color:#bbb;float:right;display:block;padding:2px;cursor:pointer;width:24px;' onclick='loadsonglist(\"playlist=$id&cat=ablum\",\"$name_special\",{\"pageY\":event.pageY?event.pageY:event.y,\"clientX\":event.clientX});'>详情</span></td></tr>";
 	$i++;
 }
 

@@ -104,9 +104,9 @@ def updateplaylist():
 
 updateplaylist()
 os.popen('start '+foobar2000_path+' /playlist:"Google"','r')
-time.sleep(4)
+time.sleep(6)
 os.popen('start '+foobar2000_path+' /play "playlist/empty.fpl"','r')
-time.sleep(2)
+time.sleep(4)
 if os.path.exists("playlist/temp.fpl"):
     os.popen('start '+foobar2000_path+' /add "playlist/temp.fpl"','r')
 os.popen('start '+foobar2000_path+' /add "playlist/google.m3u"','r')
@@ -118,9 +118,9 @@ while True:
     time.sleep(10000)
     updateplaylist()
     os.popen('start '+foobar2000_path+' /playlist:"Google"','r')
-    time.sleep(2)
+    time.sleep(4)
     os.popen('start '+foobar2000_path+' /play "playlist/empty.fpl"','r')
-    time.sleep(2)
+    time.sleep(4)
     if os.path.exists("playlist/temp.fpl"):
         os.popen('start '+foobar2000_path+' /add "playlist/temp.fpl"','r')
     os.popen('start '+foobar2000_path+' /add "playlist/google.m3u"','r')

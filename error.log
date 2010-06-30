@@ -676,3 +676,27 @@ IOError: [Errno 22] invalid mode ('w') or filename: 'percent.txt'
 2010-05-12 14:30:28
 2010-05-12 14:30:59
 2010-05-12 14:34:50
+2010-05-17 19:03:57
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 118, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-05-18 11:00:05
+2010-05-18 11:01:55
+2010-05-18 11:05:47
+2010-05-26 11:05:21
+2010-05-26 11:06:05
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 118, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-06-17 10:48:38
+2010-06-24 12:06:49
+2010-06-24 12:09:44
+Traceback (most recent call last):
+  File "D:\Apache2.2\htdocs\music\google_music_web.pyw", line 118, in <module>
+    time.sleep(10000)
+IOError: [Errno 4] Interrupted function call
+2010-06-25 14:13:39
+2010-06-30 14:23:34
+2010-06-30 15:12:06

@@ -16,7 +16,7 @@ foreach($topics[1] as $topic) {
 		$title = $topics[4][$i];
 	}
 
-	echo "<tr><td bgcolor='$color'><a href='http://www.google.cn/music/topiclisting?q=$id&cat=song&output=xml' style='display:block' title='$title' onclick='a_onclick(this);return false;' onmouseover='showtitle(this);return false;' onmouseout='cleartitle();return false;' onmousemove='movetitle(event);'>$name</a></td><td><span style='font-size:12px;background-color:#666;color:#bbb;float:right;display:block;padding:2px;cursor:pointer;' onclick='globalevent=event;loadsonglist(\"playlist=$id\",\"$name\");'>详情</span></td></tr>";
+	echo "<tr><td bgcolor='$color'><a href='http://www.google.cn/music/topiclisting?q=$id&cat=song&output=xml' style='display:block' title='$title' onclick='a_onclick(this);return false;' onmouseover='showtitle(this);return false;' onmouseout='cleartitle();return false;' onmousemove='movetitle(event);'>$name</a></td><td><span style='font-size:12px;background-color:#666;color:#bbb;float:right;display:block;padding:2px;cursor:pointer;' onclick='loadsonglist(\"playlist=$id\",\"$name\",{\"pageY\":event.pageY?event.pageY:event.y,\"clientX\":event.clientX});'>详情</span></td></tr>";
 	$i++;
 }
 echo "</table>";

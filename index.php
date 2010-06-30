@@ -30,7 +30,7 @@ html *{-moz-user-select: none;}
 </style>
 </head>
 <script language="javascript" src="main.js"></script>
-<body onLoad="do_links()" onmouseup="mousedown=false">
+<body onLoad="do_links()" onselectstart="return false;">
 <span style="font-weight:bold; background-color:#aaaaaa">音乐榜单:</span><br /><br />
 <table><tr><td bgcolor="#bbbbbb">
 
@@ -43,10 +43,10 @@ html *{-moz-user-select: none;}
 
 <div id="ownlist"></div>
 <br />
-<input id="quit" class="button" type="submit" onclick="play('quit');return false" value="Quit" />
-<input id="quit" class="button" type="submit" onclick="play('kill');return false" value="KillPython" />
-<input id="next" class="button" type="submit" onclick="play('next');return false" value="Next" />
-<input id="pause" class="button" type="submit" onclick="play('pause');return false" value="Pause" /><br /><br />
+<a id="quit" class="button" onclick="play('quit');return false">Quit</a>
+<a id="quit_python" class="button" onclick="play('kill');return false">KillPython</a>
+<a id="next" class="button" onclick="play('next');return false">Next</a>
+<a id="pause" class="button" onclick="play('pause');return false">Pause</a><br /><br />
 <div id="percentlayer" style="display:none">Loading,Please Wait...<span id="percent"></span></div>
 <br /><br /><br />
 <span style="font-weight:bold; background-color:#aaaaaa">专题列表:</span><br /><br />
@@ -60,9 +60,9 @@ html *{-moz-user-select: none;}
 </div>
 
 
-<div id="songlist" style="display:none;position:absolute;opacity:0.8;background-color:#777; "><div id="songlistclose" align="right" style="background-color:#555;height:16px;" onmousedown="mousedownfunc(event);"><span id="songlisttitle" style="font-size:12px;float:left;line-height:18px;margin-left:6px;color:#999"></span><span style="font-size:12px;background-color:#111;color:#777;cursor:pointer;" onclick="document.getElementById('songlist').style.display='none';">Close</span></div><div id="songlistcontent" style="background-color:#999;overflow-Y:auto;width:500px;;max-height:400px;margin:2px 4px 4px 4px;"></div>
+<div id="songlist" style="display:none;position:absolute;opacity:0.8;background-color:#777;width:508px; "><div id="songlistclose" align="right" style="background-color:#555;height:16px;cursor:move;" onmousedown="mousedownfunc(event);return false;"><span id="songlisttitle" style="font-size:12px;float:left;line-height:18px;margin-left:6px;color:#999"></span><span style="font-size:12px;background-color:#111;color:#777;cursor:pointer;" onclick="document.getElementById('songlist').style.display='none';">Close</span></div><div id="songlistcontent" style="background-color:#999;overflow-Y:auto;width:500px;;max-height:400px;margin:2px 4px 4px 4px;"></div>
 
-<div style="padding:4px 0px 5px 30px;background-color:#444" onmousedown="mousedownfunc(event);"><span style='font-size:12px;background-color:#111;color:#bbb;cursor:pointer;padding:2px;margin-right:10px;' onclick="selectall('checked');">全部选择</span><span style='font-size:12px;background-color:#111;color:#bbb;cursor:pointer;padding:2px;margin-right:10px;' onclick="selectall('');">全部取消</span><span id="button_multi_use" style='font-size:12px;background-color:#111;color:#bbb;cursor:pointer;padding:2px;'></span></div>
+<div style="padding:4px 0px 5px 30px;background-color:#444;cursor:move;" onmousedown="mousedownfunc(event);return false;"><span style='font-size:12px;background-color:#111;color:#bbb;cursor:pointer;padding:2px;margin-right:10px;' onclick="selectall('checked');">全部选择</span><span style='font-size:12px;background-color:#111;color:#bbb;cursor:pointer;padding:2px;margin-right:10px;' onclick="selectall('');">全部取消</span><span id="button_multi_use" style='font-size:12px;background-color:#111;color:#bbb;cursor:pointer;padding:2px;'></span></div>
 </div>
 </body>
 </html>

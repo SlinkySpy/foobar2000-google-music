@@ -3,13 +3,18 @@ var timer;
 var playing_topic;
 var status_tran = 1;
 var status_timer;
-var mousedown;
 var offsetX;
 var offsetY;
-window.onkeydown = function(event){
-	if(event.keyCode == 27) document.getElementById("songlist").style.display = "none";
+document.onkeydown = function(event){
+	o = event?event:window.event;
+	if(o.keyCode == 27) document.getElementById("songlist").style.display = "none";
 }
-window.onmousemove = playlistmove;
+document.onmouseup = function(){
+	if(document.documentElement.releaseCapture){
+		document.documentElement.releaseCapture();
+	}
+	document.onmousemove = null;
+}
 function do_links(){
 	for (i=0;i<document.links.length;i++) {
 		document.links[i].onclick = a_onclick;
@@ -49,18 +54,20 @@ function a_onclick(o) {
 	return false;
 }
 
+var percent_flag = 0;
 function getpercent() {
 	document.getElementById("percentlayer").innerHTML="Loading,Please Wait...<span id='percent'></span>";
 	document.getElementById("percentlayer").style.display = "";
 	var oxmlhttp2 = new XMLHttpRequest();
 	oxmlhttp2.open("get","percent.txt",true);
 	oxmlhttp2.onreadystatechange = function() {
-		if((oxmlhttp2.readyState == 4) && (oxmlhttp2.status == 404)){
+		if((oxmlhttp2.readyState == 4) && (oxmlhttp2.status == 404) && (percent_flag == 1)){
 			clearInterval(timer);
 			document.getElementById("percentlayer").innerHTML="Now Playing...<span id='percent'></span>";
 		}
 		if ((oxmlhttp2.readyState == 4) && (oxmlhttp2.status == 200)){
 			if (oxmlhttp2.responseText != "1"){
+				percent_flag = 1;
 				document.getElementById("percent").innerHTML=oxmlhttp2.responseText;
 			} else {
 				clearInterval(timer);
@@ -121,13 +128,15 @@ function cleartitle(){
 }
 
 function movetitle(o){
-	titlelayer = document.getElementById("title");
+	var pageX = o.pageX?o.pageX:o.x;
+	var pageY = o.pageY?o.pageY:o.y;
+	var titlelayer = document.getElementById("title");
 	if (titlelayer.innerHTML == ""){
 		return true;
 	}
-	titlelayer.style.left = o.pageX+20+'px';
-	titlelayer.style.top = o.pageY+'px';
-	if (titlelayer.clientHeight+o.clientY > document.documentElement.clientHeight) titlelayer.style.top = o.pageY - titlelayer.clientHeight+"px";
+	titlelayer.style.left = pageX+20+'px';
+	titlelayer.style.top = pageY+'px';
+	if (titlelayer.clientHeight+o.clientY > document.documentElement.clientHeight) titlelayer.style.top = pageY - titlelayer.clientHeight+"px";
 	return true;
 }
 
@@ -155,7 +164,7 @@ function delownlistresponse(result){
 	ajax("ownlist.php","",ownlistresponse);
 }
 
-function songlistresponse(result){
+function songlistresponse(result,param){
 	var reg = /<script[^>]*>(.+)<\/script>/im;
 	var match = result.match(reg);
 	if (match){
@@ -165,20 +174,24 @@ function songlistresponse(result){
 	var html = result.replace(reg,"");
 	var songlist = document.getElementById("songlist");
 	document.getElementById("songlistcontent").innerHTML=html;
-	songlist.style.left = globalevent.clientX+20+"px";
-	songlist.style.top = globalevent.pageY-50+"px";
-	if (globalevent.pageY>300) songlist.style.top = globalevent.pageY/2+"px";
-	if (document.documentElement.clientHeight - songlist.clientHeight < parseInt(songlist.style.top)) songlist.style.top = document.documentElement.clientHeight - songlist.clientHeight +"px";
-	if (document.documentElement.clientWidth -508 < parseInt(songlist.style.left)) songlist.style.left = document.documentElement.clientWidth -508 +"px";
+	if(param){
+		var pageY = param.pageY;
+		var clientX = param.clientX;
+		songlist.style.left = clientX+20+"px";
+		songlist.style.top = pageY-50+"px";
+		if (pageY>300) songlist.style.top = pageY/2+"px";
+		if (document.documentElement.clientHeight - songlist.clientHeight < parseInt(songlist.style.top)) songlist.style.top = document.documentElement.clientHeight - songlist.clientHeight +"px";
+		if (document.documentElement.clientWidth -508 < parseInt(songlist.style.left)) songlist.style.left = document.documentElement.clientWidth -508 +"px";
+	}
 	songlist.style.display = "";
 }
 
-function ajax(url,poststr,callback){
+function ajax(url,poststr,callback,param){
 	var oxmlhttp = new XMLHttpRequest();
 	oxmlhttp.open("POST",url,true);
 	oxmlhttp.onreadystatechange = function(){
 		if((oxmlhttp.readyState == 4) && (oxmlhttp.status == 200)){
-			callback(oxmlhttp.responseText);
+			callback(oxmlhttp.responseText,param);
 		}
 	}
 	oxmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
@@ -186,8 +199,8 @@ function ajax(url,poststr,callback){
 }
 
 function selectall(type){
-	var frm = document.getElementById('songlistform');
-	var checkbox = frm.getElementsByTagName("input");
+	var songlistcontent = document.getElementById('songlistcontent');
+	var checkbox = songlistcontent.getElementsByTagName("input");
 	for (var i=0;i<checkbox.length;i++){
 		checkbox[i].checked=type;
 	}
@@ -195,8 +208,8 @@ function selectall(type){
 
 function addsonglist(){
 	var flag = 0;
-	var frm = document.getElementById('songlistform');
-	var checkbox = frm.getElementsByTagName("input");
+	var songlistcontent = document.getElementById('songlistcontent');
+	var checkbox = songlistcontent.getElementsByTagName("input");
 	var jsonstr = "{";
 	for (var i=0;i<checkbox.length;i++){
 		if(checkbox[i].checked){
@@ -223,24 +236,24 @@ function aslresponse(result){
 	status_timer = setInterval(statuslayer,200);
 }
 
-function loadsonglist(poststr,title){
+function loadsonglist(poststr,title,param){
 	document.getElementById("songlisttitle").innerHTML=title;
 	document.getElementById("button_multi_use").innerHTML="添加到默认播放列表";
 	document.getElementById("button_multi_use").onclick = addsonglist;
-	ajax("songlist.php",poststr,songlistresponse);
+	ajax("songlist.php",poststr,songlistresponse,param);
 }
 
-function loaddefaultlist(){
+function loaddefaultlist(param){
 	document.getElementById("songlisttitle").innerHTML="默认播放列表";
 	document.getElementById("button_multi_use").innerHTML="删除选择曲目";
 	document.getElementById("button_multi_use").onclick = deletesongs;
-	ajax("defaultlist.php","",songlistresponse);
+	ajax("defaultlist.php","",songlistresponse,param);
 }
 
 function deletesongs(){
 	var flag = 0;
-	var frm = document.getElementById('songlistform');
-	var checkbox = frm.getElementsByTagName("input");
+	var songlistcontent = document.getElementById('songlistcontent');
+	var checkbox = songlistcontent.getElementsByTagName("input");
 	var id = "";
 	for (var i=0;i<checkbox.length;i++){
 		if(checkbox[i].checked){
@@ -255,10 +268,10 @@ function deletesongs(){
 function deleteonesong(id){
 	ajax("deletesong.php","id="+id,dsresponse);
 }
-function dsresponse(result){
+function dsresponse(result,param){
 	document.getElementById("percentlayer").innerHTML=result;
 	document.getElementById("percentlayer").style.display="";
-	loaddefaultlist();
+	loaddefaultlist(param);
 	clearInterval(status_timer);
 	status_tran = 1;
 	status_timer = setInterval(statuslayer,200);
@@ -279,26 +292,31 @@ function displaystatus(){
 }
 
 function playlistmove(event){
+	event = event?event:window.event;
 	var songlist = document.getElementById("songlist");
-	if(!mousedown) return false;
+	var pageY = event.pageY?event.pageY:event.y;
 	if (event.clientX-offsetX > document.documentElement.clientWidth-508){
 		songlist.style.left = document.documentElement.clientWidth-508+"px";
 	}else{
 		songlist.style.left = (event.clientX-offsetX)+"px";
 	}
-	if(event.pageY-offsetY > document.documentElement.scrollHeight - songlist.clientHeight){
+	if(pageY-offsetY > document.documentElement.scrollHeight - songlist.clientHeight){
 		songlist.style.top = document.documentElement.scrollHeight -songlist.clientHeight+"px";
 	}else{
-		songlist.style.top = (event.pageY-offsetY)+"px";
+		songlist.style.top = (pageY-offsetY)+"px";
 	}
-	return true;
+	return false;
 }
 
 function mousedownfunc(o){
+	document.onmousemove = playlistmove;
+	if(document.documentElement.setCapture){
+		document.documentElement.setCapture();
+	}
+	var pageY = o.pageY?o.pageY:o.y;
 	offsetX = o.clientX-parseInt(document.getElementById("songlist").style.left);
-	offsetY = o.pageY-parseInt(document.getElementById("songlist").style.top);
-	mousedown = true;
-	return true;
+	offsetY = pageY-parseInt(document.getElementById("songlist").style.top);
+	return false;
 }
 
 function loadartistresponse(result){
