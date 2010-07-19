@@ -2,7 +2,7 @@
 $start = isset($_GET['start'])?$_GET['start']:0;
 
 $page_data = file_get_contents("http://www.google.cn/music/topiclistingdir?cat=song&start=$start");
-preg_match_all("/(?<=<a class=\"topic_title\" href=\"\/music\/url\?q\=%2Fmusic%2Ftopiclisting%3Fq%3D)(.*?)(?:%26cat.*?\">)(.*?)(?:<\/a>.*?(?:<div>(.*?)<\/div>|<div title=\")(.*?)(?=\"))/s",$page_data,$topics);
+preg_match_all("/(?<=<a class=\"topic_title\" href=\"\/music\/url\?q\=\/music\/topiclisting\?q%3D)(.*?)(?:%26cat.*?\">)(.*?)(?:<\/a>.*?(?:<div>(.*?)<\/div>|<div title=\")(.*?)(?=\"))/s",$page_data,$topics);
 
 echo "<table>";
 $i = 0;
