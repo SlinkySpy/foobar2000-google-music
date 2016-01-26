@@ -1,0 +1,1 @@
+You can use this to enjoy google music with foobar2000 in China.
